@@ -1,0 +1,23 @@
+<!-- public domain, see file UNLICENSE -->
+<h1>Mighty fine demo</h1>
+<div id='a'>
+</div>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+//callback for the buttons clicked
+function clicked() {
+  $.post('/buttons', {foo: $(this).text() }, function(data) {
+    alert("got "+data.bar+" from server")
+  })
+}
+
+//fetch some data from server, create buttons with the data
+$.get('/buttons', function(data) {
+  for(i=0; i<data.length; i++) {
+    $('#a').append( $('<button/>').text(data[i]) )
+  }
+  //set callback to all buttons
+  $(':button').click(clicked)
+}
+);
+</script>

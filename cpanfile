@@ -1,0 +1,2 @@
+requires 'Dancer';
+requires 'JSON';
