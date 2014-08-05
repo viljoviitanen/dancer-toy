@@ -20,6 +20,8 @@ You need a heroku account, the toolbelt installed, and logged in (https://devcen
 
 The magic happens with the [custom buildpack](https://github.com/judofyr/perloku). It uses the [cpanfile](cpanfile) to install dependencies first, then runs the [Perloku](Perloku) file to start the server.
 
+The author has a running instance of this app in heroku at http://obscure-headland-5322.herokuapp.com/ .
+
 **License**
 
 [Unlicensed](UNLICENSE) / Public Domain
