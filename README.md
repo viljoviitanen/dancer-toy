@@ -18,7 +18,7 @@ You need a heroku account, the toolbelt installed, and logged in (https://devcen
     heroku create -s cedar --buildpack http://github.com/judofyr/perloku.git
     git push heroku master
 
-The magic happens with the [custom buildpack]((https://github.com/judofyr/perloku)) . It uses the [cpanfile](cpanfile) to install dependencies first, then runs the [Perloku](Perloku) file to start the server.
+The magic happens with the [custom buildpack](https://github.com/judofyr/perloku). It uses the [cpanfile](cpanfile) to install dependencies first, then runs the [Perloku](Perloku) file to start the server.
 
 **License**
 
