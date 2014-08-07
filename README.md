@@ -13,7 +13,12 @@ Install perl [Dancer](http://www.perldancer.org/) module and dependencies with w
 
 **Instructions on how to run on Heroku**
 
-You need a heroku account, the toolbelt installed, and logged in (https://devcenter.heroku.com/articles/quickstart). Clone this repo and cd in it. Then:
+Just click the button:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+Or if you prefer to do it manually,
+you need a heroku account, the toolbelt installed, and logged in (https://devcenter.heroku.com/articles/quickstart). Clone this repo and cd in it. Then:
 
     heroku create -s cedar --buildpack http://github.com/judofyr/perloku.git
     git push heroku master
