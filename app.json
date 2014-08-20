@@ -1,6 +1,6 @@
 {
   "name": "dancer-toy",
   "description": "A minimal perl dancer+jquery demo app",
-  "env": { "BUILDPACK_URL": "http://github.com/judofyr/perloku.git" },
+  "env": { "BUILDPACK_URL": "http://github.com/viljoviitanen/perloku.git", "STACK": "cedar-14" },
   "success_url": "/"
 }
