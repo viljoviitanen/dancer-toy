@@ -20,7 +20,7 @@ Just click the button:
 Or if you prefer to do it manually,
 you need a heroku account, the toolbelt installed, and logged in (https://devcenter.heroku.com/articles/quickstart). Clone this repo and cd in it. Then:
 
-    heroku create -s cedar-14 --buildpack http://github.com/viljoviitanen/perloku.git
+    heroku create --buildpack http://github.com/viljoviitanen/perloku.git
     git push heroku master
 
 The magic happens with the [custom buildpack](https://github.com/viljoviitanen/perloku). It uses the [cpanfile](cpanfile) to install dependencies first, with cpanminus, then runs the [Perloku](Perloku) file to start the server.
